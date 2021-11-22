@@ -11,9 +11,9 @@ local statistics = require("vim-be-good.statistics");
 Stats = statistics:new()
 
 local endStates = {
-    menu = "Menu",
-    replay = "Replay",
-    quit = "Quit (or just ZZ like a real man)",
+    menu = " Menu",
+    replay = " Replay",
+    quit = " Quit",
 }
 
 local states = {
@@ -264,12 +264,12 @@ function GameRunner:renderEndGame()
         table.insert(lines, "")
     end
 
-    table.insert(lines, "Where do you want to go next? (Delete Line)")
+    table.insert(lines, "-> Where do you want to go next?")
     local optionLine = #lines + 1
 
-    table.insert(lines, "Menu")
-    table.insert(lines, "Replay")
-    table.insert(lines, "Quit (or just ZZ like a real man)")
+    table.insert(lines, " Menu")
+    table.insert(lines, " Replay")
+    table.insert(lines, " Quit")
 
     return lines, optionLine
 end
@@ -328,4 +328,3 @@ function GameRunner:run()
 end
 
 return GameRunner
-
