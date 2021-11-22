@@ -7,18 +7,20 @@ local Menu = {}
 
 local gameHeader = {
     "",
-    "-> Select a Game",
-    "----------------------------------------------",
+    "╭-------------------------╮",
+    "│      Select a Game      │",
+    "╰-------------------------╯",
 }
 
 local difficultyHeader = {
     "",
-    "-> Select a Difficulty",
-    "----------------------------------------------------",
+    "╭-------------------------╮",
+    "│   Select a Difficulty   │",
+    "╰-------------------------╯",
 }
 
 local instructions = {
-    "Improve your Vim Proficiency",
+    "VimBeGood"
 }
 
 local credits = {
