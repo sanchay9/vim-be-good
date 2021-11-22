@@ -264,7 +264,7 @@ function GameRunner:renderEndGame()
         table.insert(lines, "")
     end
 
-    table.insert(lines, "-----------------------")
+    table.insert(lines, "------------------------------")
     local optionLine = #lines + 1
 
     table.insert(lines, " Menu")
